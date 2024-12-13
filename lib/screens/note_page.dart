@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
-import 'package:todo_app/buttons.dart';
-import 'package:todo_app/class_todo.dart';
+import 'package:note_app/buttons.dart';
+import 'package:note_app/class_todo.dart';
 
 class NotePage extends StatefulWidget {
   NotePage({

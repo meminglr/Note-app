@@ -1,10 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
-import 'package:todo_app/screens/adding_page.dart';
-import 'package:todo_app/class_todo.dart';
-import 'package:todo_app/screens/edit_page.dart';
-import 'package:todo_app/screens/note_page.dart';
+import 'package:note_app/class_todo.dart';
+import 'package:note_app/screens/note_page.dart';
 
 class HomePage extends StatefulWidget {
   //static List listNotes = [Notes(title: "ti", text: "5")];
