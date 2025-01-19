@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 
 // ignore: must_be_immutable
 class TextTextField extends StatelessWidget {
@@ -19,8 +18,8 @@ class TextTextField extends StatelessWidget {
       autofocus: autofocus,
       controller: tfText,
       maxLines: null,
-      style: TextStyle(fontSize: 25),
-      decoration: InputDecoration.collapsed(
+      style: const TextStyle(fontSize: 25),
+      decoration: const InputDecoration.collapsed(
         hintText: "Metin",
         hintStyle: TextStyle(fontSize: 25, color: Colors.black54),
       ),
@@ -40,8 +39,8 @@ class TitleTextFieid extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextField(
       controller: tfTitle,
-      style: TextStyle(fontSize: 50),
-      decoration: InputDecoration.collapsed(
+      style: const TextStyle(fontSize: 50),
+      decoration: const InputDecoration.collapsed(
         hintText: "Başlık",
         hintStyle: TextStyle(fontSize: 50, color: Colors.black54),
       ),

@@ -12,22 +12,6 @@ class Notes {
     required this.titleController,
     required this.textController,
   });
-}
 
-List<Notes> listNotes = [
-  Notes(
-      title: "tittitletitlele",
-      text: "textitletitletitletitletitletitletitletitletitletitletitletitlet",
-      titleController: TextEditingController(),
-      textController: TextEditingController()),
-  Notes(
-      title: "tittitletitletitletitletitletitlele",
-      text: "ttitletitleext",
-      titleController: TextEditingController(),
-      textController: TextEditingController()),
-  Notes(
-      title: "tititletle",
-      text: "textitletitletitletitletitlet",
-      titleController: TextEditingController(),
-      textController: TextEditingController()),
-];
+  static List<Notes> listNotes = [];
+}

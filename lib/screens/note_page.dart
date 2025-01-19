@@ -5,10 +5,10 @@ import 'package:note_app/buttons.dart';
 import 'package:note_app/class_todo.dart';
 
 class NotePage extends StatefulWidget {
-  NotePage({
-    Key? key,
+  const NotePage({
+    super.key,
     this.notes,
-  }) : super(key: key);
+  });
   final Notes? notes;
 
   @override
@@ -37,7 +37,27 @@ class _NotePageState extends State<NotePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        actions: [
+          widget.notes != null
+              ? Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 10.0),
+                  child: FilledButton(
+                    onPressed: () {
+                      Notes.listNotes.remove(widget.notes);
+                      Navigator.pop(context);
+                    },
+                    child: const Row(
+                      children: [
+                        Icon(Icons.delete_outline_rounded),
+                        Text("Sil"),
+                      ],
+                    ),
+                  ),
+                )
+              : const SizedBox(),
+        ],
+      ),
       floatingActionButton: isFabVisible
           ? FloatingActionButton.extended(
               onPressed: () {
@@ -46,8 +66,8 @@ class _NotePageState extends State<NotePage> {
                   _currentNote!.text = _textController.text;
                   _currentNote!.titleController = _titleController;
                   _currentNote!.textController = _textController;
-                } else {
-                  listNotes.add(Notes(
+                } else if (_textController.text.isNotEmpty) {
+                  Notes.listNotes.add(Notes(
                       title: _titleController.text,
                       text: _textController.text,
                       titleController: _titleController,
