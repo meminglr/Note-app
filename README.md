@@ -1,16 +1,30 @@
-# todo_app
+# Note App 📝
 
-A new Flutter project.
+This is a simple **note app** made with **Flutter**.  
+It helps you save different kinds of notes like ideas, appointments, plans, and more — all in a clean and easy-to-use design.
 
-## Getting Started
+## ✨ Features
 
-This project is a starting point for a Flutter application.
+- Add and view notes  
+- Each note has a title and content  
+- Different types of notes (ideas, plans, appointments, etc.)  
+- Nice and modern UI  
+- Button to add a new note  
 
-A few resources to get you started if this is your first Flutter project:
+## 📱 Screenshot
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+<p float="left">
+  <img src="Screenshot_20250416-193609.png" width="200" />
+    &nbsp;
+  <img src="screen-20250416-193056 (3).gif" width="200" />
+</p>
+## 🛠️ Technologies
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Flutter  
+- Dart
+
+## 👨‍💻 Developer
+
+**Mehmet Emin Güler**  
+📧 Email: [mhmt.eminguler@gmail.com](mailto:mhmt.eminguler@gmail.com)  
+💻 GitHub: [github.com/meminglr](https://github.com/meminglr)
