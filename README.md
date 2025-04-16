@@ -18,6 +18,7 @@ It helps you save different kinds of notes like ideas, appointments, plans, and 
     &nbsp;
   <img src="screen-20250416-193056 (3).gif" width="200" />
 </p>
+
 ## 🛠️ Technologies
 
 - Flutter  
